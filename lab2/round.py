@@ -1,5 +1,4 @@
 import copy
-
 imp = input("Enter key to generate: ")
 imp_list = list(imp)
 to_extract = 8
@@ -22,18 +21,15 @@ permut_choice_2 = [14, 17, 11, 24, 1, 5,
                    44, 49, 39, 56, 34, 53,
                    46, 42, 50, 36, 29, 32]
 
-
 def text_to_bits(text, encoding='utf-8', errors='surrogatepass'):
     bits = bin(int.from_bytes(text.encode(encoding, errors), 'big'))[2:]
     return bits.zfill(8 * ((len(bits) + 7) // 8))
-
 
 def join_single_bits(arr):
     string = ''
     for i in range(len(arr)):
         string += arr[i]
     return string
-
 
 def one_bit_shift(var):
     var1 = list(var)
@@ -63,32 +59,17 @@ if len(imp_list) >= to_extract:
     choice = input("1. Left bits \n2. Right bit selection ")
     if choice == '1':
         inp_8_char = imp_list[:to_extract]
-        # print(inp_8_char)
         for i in range(len(inp_8_char)):
             inp_8_char[i] = text_to_bits(inp_8_char[i])
-        # print(inp_8_char)
         bit_64_arr = convert_to_single_bits(inp_8_char)
-        # print(bit_64_arr)
+        bit_56_arr = []
+        for i in range(56):
+            bit_56_arr.append(bit_64_arr[permut_choice_1[i]-1])
+        left_half = bit_56_arr[:28]
+        right_half = bit_56_arr[28:]
 
-        for i in range(len(bit_64_arr)):
-            if ((i+1) % 8) == 0:
-                continue
-            else:
-                bit_64_arr[permut_choice_1.index(i+1)] = bit_64_arr[i]
-
-        k = 0
-        for i in range(len(bit_64_arr)):
-            if(i % 8) == 0:
-                bit_64_arr.pop(i-k)
-                # print(i)
-                k = k + 1
-        # print(len(bit_64_arr))
-
-        left_half = bit_64_arr[:28]
-        right_half = bit_64_arr[28:]
         for l in range(16):
-
-            if i == 1 and i == 2 and i == 9 and i == 16:
+            if l == 0 or l == 1 or l == 8 or l == 15:
                 left_half = join_single_bits(left_half)
                 left_half1 = one_bit_shift(left_half)
 
@@ -98,24 +79,12 @@ if len(imp_list) >= to_extract:
                 left_half1 = convert_to_single_bits(left_half1)
                 right_half1 = convert_to_single_bits(right_half1)
 
-                key = right_half1 + right_half1
-                key1 = key.copy()
-                # print(key1)
+                key = left_half1 + right_half1
 
-                for i in range(len(key1)):
-                    if i == 8 or i == 17 or i == 21 or i == 24 or i == 34 or i == 37 or i == 42 or i == 53:
-                        continue
-                    else:
-                        key1[permut_choice_2.index(i+1)] = key1[i]
-                # print(key1)
-
-                kk = 0
-                for i in range(len(key1)):
-                    if i == 8 or i == 17 or i == 21 or i == 24 or i == 34 or i == 37 or i == 42 or i == 53:
-                        key1.pop(i-kk)
-                        # print(i)
-                        kk = kk + 1
-                print(l+1, join_single_bits(key1))
+                key1 = []
+                for i in range(48):
+                    key1.append(key[permut_choice_2[i]-1])
+                print(l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
 
@@ -129,54 +98,30 @@ if len(imp_list) >= to_extract:
                 left_half1 = convert_to_single_bits(left_half1)
                 right_half1 = convert_to_single_bits(right_half1)
 
-                key = right_half1 + right_half1
-                key1 = key.copy()
-                # print(key1)
+                key = left_half1 + right_half1
 
-                for i in range(len(key1)):
-                    if i == 8 or i == 17 or i == 21 or i == 24 or i == 34 or i == 37 or i == 42 or i == 53:
-                        continue
-                    else:
-                        key1[permut_choice_2.index(i+1)] = key1[i]
+                key1 = []
+                for i in range(48):
+                    key1.append(key[permut_choice_2[i]-1])
 
-                kk = 0
-                for i in range(len(key1)):
-                    if i == 8 or i == 17 or i == 21 or i == 24 or i == 34 or i == 37 or i == 42 or i == 53:
-                        key1.pop(i-kk)
-                        # print(i)
-                        kk = kk + 1
-                print(l+1, join_single_bits(key1))
+                print(l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
-
     else:
         inp_8_char = imp_list[-to_extract:]
-        # print(inp_8_char)
         for i in range(len(inp_8_char)):
             inp_8_char[i] = text_to_bits(inp_8_char[i])
-        # print(inp_8_char)
         bit_64_arr = convert_to_single_bits(inp_8_char)
-        # print(bit_64_arr)
+        bit_56_arr = []
+        for i in range(56):
+            bit_56_arr.append(bit_64_arr[permut_choice_1[i]-1])
 
-        for i in range(len(bit_64_arr)):
-            if ((i+1) % 8) == 0:
-                continue
-            else:
-                bit_64_arr[permut_choice_1.index(i+1)] = bit_64_arr[i]
+        left_half = bit_56_arr[:28]
+        right_half = bit_56_arr[28:]
 
-        k = 0
-        for i in range(len(bit_64_arr)):
-            if(i % 8) == 0:
-                bit_64_arr.pop(i-k)
-                # print(i)
-                k = k + 1
-        # print(len(bit_64_arr))
-
-        left_half = bit_64_arr[:28]
-        right_half = bit_64_arr[28:]
         for l in range(16):
 
-            if i == 1 and i == 2 and i == 9 and i == 16:
+            if l == 0 or l == 1 or l == 8 or l == 15:
                 left_half = join_single_bits(left_half)
                 left_half1 = one_bit_shift(left_half)
 
@@ -186,24 +131,11 @@ if len(imp_list) >= to_extract:
                 left_half1 = convert_to_single_bits(left_half1)
                 right_half1 = convert_to_single_bits(right_half1)
 
-                key = right_half1 + right_half1
-                key1 = key.copy()
-                # print(key1)
-
-                for i in range(len(key1)):
-                    if i == 8 or i == 17 or i == 21 or i == 24 or i == 34 or i == 37 or i == 42 or i == 53:
-                        continue
-                    else:
-                        key1[permut_choice_2.index(i+1)] = key1[i]
-                # print(key1)
-
-                kk = 0
-                for i in range(len(key1)):
-                    if i == 8 or i == 17 or i == 21 or i == 24 or i == 34 or i == 37 or i == 42 or i == 53:
-                        key1.pop(i-kk)
-                        # print(i)
-                        kk = kk + 1
-                print(l+1, join_single_bits(key1))
+                key = left_half1 + right_half1
+                key1 = []
+                for i in range(48):
+                    key1.append(key[permut_choice_2[i]-1])
+                print(l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
 
@@ -217,28 +149,16 @@ if len(imp_list) >= to_extract:
                 left_half1 = convert_to_single_bits(left_half1)
                 right_half1 = convert_to_single_bits(right_half1)
 
-                key = right_half1 + right_half1
-                key1 = key.copy()
-                # print(key1)
+                key = left_half1 + right_half1
 
-                for i in range(len(key1)):
-                    if i == 8 or i == 17 or i == 21 or i == 24 or i == 34 or i == 37 or i == 42 or i == 53:
-                        continue
-                    else:
-                        key1[permut_choice_2.index(i+1)] = key1[i]
+                key1 = []
+                for i in range(48):
+                    key1.append(key[permut_choice_2[i]-1])
 
-                kk = 0
-                for i in range(len(key1)):
-                    if i == 8 or i == 17 or i == 21 or i == 24 or i == 34 or i == 37 or i == 42 or i == 53:
-                        key1.pop(i-kk)
-                        # print(i)
-                        kk = kk + 1
-                print(l+1, join_single_bits(key1))
+                print(l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
-
 
 else:
     print("Enter key of bigger length")
     exit
-# print(len(imp_list))

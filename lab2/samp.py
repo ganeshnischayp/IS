@@ -1,45 +1,19 @@
-def convert_to_single_bits(arr):
-    split_list = []
-    for i in range(len(arr)):
-        for j in range(len(arr[i])):
-            split_list.append(arr[i][j])
-    k = 0
-    for i in range(len(split_list)):
-        if(i%8) == 0:
-            split_list.pop(i-k)
-            print(i)
-            k = k + 1
+st=input("String: ")              #take input
+a=(''.join(format(ord(x), 'b').zfill(8) for x in st))     #entire input converted into binary ('a' is string now)
 
-    return split_list
+print("Initial 64-bit key:",a)         #printing the same
 
-def join_single_bits(arr):
-    string = ''
-    for i in range(len(arr)):
-        string += arr[i]
-    return string
+new=''                  #consider the new empty string
+pc1=[57,49,41,33,25,17,9,
+1,58,50,42,34,26,18,
+10,2,59,51,43,35,27,
+19,11,3,60,52,44,36,
+63,55,47,39,31,23,15,
+7,62,54,46,38,30,22,
+14,6,61,53,45,37,29,
+21,13,5,28,20,12,4]
 
+for i in range(len(pc1)):
+    new+=a[pc1[i]-1]   
 
-def one_bit_shift(var):
-    var1 = list(var)
-    ele0 = var1.pop(0)
-    var1.append(ele0)
-    return join_single_bits(var1)
-
-
-def two_bit_shift(var):
-    var1 = list(var)
-    ele0 = var1.pop(0)
-    ele1 = var1.pop(0)
-    var1.append(ele0)
-    var1.append(ele1)
-
-
-
-    return join_single_bits(var1)
-
-
-arr1 = '1111111100000100001111111001011000000000000000001110000100000101'
-arr = ['0', '0', '0', '1', '1', '1', '1', '0', '1', '1', '1', '1', '1', '1', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0']
-print(arr1)
-print(two_bit_shift(arr1))
-# for i in range(len(convert_to_single_bits(arr))):
+print(new)
