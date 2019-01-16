@@ -12,6 +12,8 @@ IPtable = [58, 50, 42, 34, 26, 18, 10, 2,
       63, 55, 47, 39, 31, 23, 15, 7]
 
 text_split =list(num)
+text_split1 =list(num)
+
 num_blocks = math.ceil(len(text_split)/8)
 text_block = [[]for i in range(num_blocks)]
 for i in range(num_blocks+1):
@@ -110,3 +112,10 @@ for i in range(len(useful_array)):
 print("After Final Permutation Bits = ",full_text)
 print("\n")
 print("After Final Permutation Text = ",text_from_bits(full_text),"\n",end= "")
+
+# for i in range(len(text_split1)):
+#     n=i*8
+#     print(full_text[n:n+8])
+
+
+    

@@ -18,24 +18,28 @@ def join_single_bits(arr):
         string += arr[i]
     return string
 
+
 def one_bit_shift(var):
-    var1 = int(var)
-    va1 = var1 << 1
-    var1 = str(var1)
-    return var1.zfill(28)
+    var1 = list(var)
+    ele0 = var1.pop(0)
+    var1.append(ele0)
+    return join_single_bits(var1)
 
 
-gpn = 2
-sg = 1
-for i in range(5):
-    aa = gpn
-    bb = sg
-    gpn = gpn + 2
-    sg = gpn + 2
-    print(gpn,sg)
-    gpn = 0
-    sg = 0
+def two_bit_shift(var):
+    var1 = list(var)
+    ele0 = var1.pop(0)
+    ele1 = var1.pop(0)
+    var1.append(ele0)
+    var1.append(ele1)
 
+
+
+    return join_single_bits(var1)
+
+
+arr1 = '1111111100000100001111111001011000000000000000001110000100000101'
 arr = ['0', '0', '0', '1', '1', '1', '1', '0', '1', '1', '1', '1', '1', '1', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0']
-# print(join_single_bits(arr))/
+print(arr1)
+print(two_bit_shift(arr1))
 # for i in range(len(convert_to_single_bits(arr))):

@@ -37,26 +37,17 @@ def join_single_bits(arr):
 
 def one_bit_shift(var):
     var1 = list(var)
-    for i in range(len(var1)):
-        if i == len(var1)-1:
-            break
-        var1[i] = var1[i+1]
-    var1[len(var1)-1] = '0'
+    ele0 = var1.pop(0)
+    var1.append(ele0)
     return join_single_bits(var1)
 
 
 def two_bit_shift(var):
     var1 = list(var)
-    for i in range(len(var1)):
-        if i == len(var1)-1:
-            break
-        var1[i] = var1[i+1]
-    var1[len(var1)-1] = '0'
-    for i in range(len(var1)):
-        if i == len(var1)-1:
-            break
-        var1[i] = var1[i+1]
-    var1[len(var1)-1] = '0'
+    ele0 = var1.pop(0)
+    ele1 = var1.pop(0)
+    var1.append(ele0)
+    var1.append(ele1)
     return join_single_bits(var1)
 
 
@@ -65,13 +56,6 @@ def convert_to_single_bits(arr):
     for i in range(len(arr)):
         for j in range(len(arr[i])):
             split_list.append(arr[i][j])
-    # k = 0
-    # for i in range(len(split_list)):
-    #     if(i%8) == 0:
-    #         split_list.pop(i-k)
-    #         # print(i)
-    #         k = k + 1
-
     return split_list
 
 
