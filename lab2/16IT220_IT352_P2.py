@@ -84,7 +84,7 @@ if len(imp_list) >= to_extract:
                 key1 = []
                 for i in range(48):
                     key1.append(key[permut_choice_2[i]-1])
-                print(l+1,join_single_bits(key1))
+                print("Round - ", l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
 
@@ -104,7 +104,7 @@ if len(imp_list) >= to_extract:
                 for i in range(48):
                     key1.append(key[permut_choice_2[i]-1])
 
-                print(l+1,join_single_bits(key1))
+                print("Round - ",l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
     else:
@@ -135,7 +135,7 @@ if len(imp_list) >= to_extract:
                 key1 = []
                 for i in range(48):
                     key1.append(key[permut_choice_2[i]-1])
-                print(l+1,join_single_bits(key1))
+                print("Round - ",l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
 
@@ -155,7 +155,7 @@ if len(imp_list) >= to_extract:
                 for i in range(48):
                     key1.append(key[permut_choice_2[i]-1])
 
-                print(l+1,join_single_bits(key1))
+                print("Round - ",l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
 
