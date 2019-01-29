@@ -1,4 +1,4 @@
-IP_out = '1111111101110100001001011011101000000000111111110000101101011001'
+IP_out = '1111111110010001001100000111111100000000111111110010110010001001'
 
 file = open("round_keys.txt", "r")
 round_keys = file.readlines()
@@ -162,6 +162,9 @@ for l in range(16):
     xor_out_with_left32 = decimalToBinary_32(xor_out_with_left32)
     # print(xor_out_with_left32)
     last_right_join = (join_single_bits(right_32))
+    if l == 15:
+        print(xor_out_with_left32 + last_right_join)
     round_output = last_right_join + xor_out_with_left32
     IP_out = round_output
-    print(round_output)
+    if l != 15:
+        print(xor_out_with_left32 + last_right_join)

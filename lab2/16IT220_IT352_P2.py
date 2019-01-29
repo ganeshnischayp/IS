@@ -65,6 +65,7 @@ if len(imp_list) >= to_extract:
         bit_56_arr = []
         for i in range(56):
             bit_56_arr.append(bit_64_arr[permut_choice_1[i]-1])
+        # print(bit_56_arr)
         left_half = bit_56_arr[:28]
         right_half = bit_56_arr[28:]
 

@@ -1,4 +1,4 @@
-#-*- coding: utf8 -*-
+
 
 #Initial permut matrix for the datas
 PI = [58, 50, 42, 34, 26, 18, 10, 2,
@@ -131,11 +131,6 @@ def binvalue(val, bitsize): #Return the binary value as a string of the given si
 def nsplit(s, n):#Split a list into sublists of size "n"
     return [s[k:k+n] for k in xrange(0, len(s), n)]
 
-def join_single_bits(arr):
-    string = ''
-    for i in range(len(arr)):
-        string += str(arr[i])
-    return string
 ENCRYPT=1
 DECRYPT=0
 
@@ -178,8 +173,7 @@ class des():
                 tmp = self.xor(g, tmp)
                 g = d
                 d = tmp
-                # if i == 15:
-                print(join_single_bits(d+g))
+                print(d+g)
             result += self.permut(d+g, PI_1) #Do the last permut and append the result to result
         final_res = bit_array_to_string(result)
         if padding and action==DECRYPT:
@@ -217,12 +211,7 @@ class des():
             g, d = self.shift(g, d, SHIFT[i]) #Apply the shift associated with the round (not always 1)
             tmp = g + d #Merge them
             self.keys.append(self.permut(tmp, CP_2)) #Apply the permut to get the Ki
-        # print(len(self.keys))
-        for i in range(16):
-            aa = ''
-            for j in range(48):
-                aa += str(self.keys[i][j])
-            # print aa
+
     def shift(self, g, d, n): #Shift a list of the given value
         return g[n:] + g[:n], d[n:] + d[:n]
     
@@ -241,10 +230,10 @@ class des():
         return self.run(key, text, DECRYPT, padding)
     
 if __name__ == '__main__':
-    key = "nitksura"
-    text= "nitksura"
+    key = "secret_k"
+    text= "Hello wo"
     d = des()
     r = d.encrypt(key,text)
-    # r2 = d.decrypt(key,r)
+    r2 = d.decrypt(key,r)
     print "Ciphered: %r" % r
-    # print "Deciphered: ", r2
+    print "Deciphered: ", r2
