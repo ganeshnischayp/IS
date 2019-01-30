@@ -1,23 +1,14 @@
-import sys
-if sys.argv[1] == '1':
-    IP_out = '1111111111111111111111111111111111111111111111111111111111111111'
-    file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case1/RK-TC1.txt", "r")
+# IP_out = '1111111111111111111111111111111111111111111111111111111111111111'
+# IP_out = '0000000000000000111111111111111111111111111111110000000000000000'
+# IP_out = '1111111111111111111111111111111100000000000000001111111111111111'
+# IP_out = '0000000011111111000000001111111100000000111111111111111100000000'
+IP_out = '1111000011111111000000001111111100000000111111111111111100001111'
 
-if sys.argv[1] == '2':
-    IP_out = '0000000000000000111111111111111111111111111111110000000000000000'
-    file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case2/RK-TC2.txt", "r")
-
-if sys.argv[1] == '3':
-    IP_out = '1111111111111111111111111111111100000000000000001111111111111111'
-    file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case3/RK-TC3.txt", "r")
-
-if sys.argv[1] == '4':
-    IP_out = '0000000011111111000000001111111100000000111111111111111100000000'
-    file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case4/RK-TC4.txt", "r")
-
-if sys.argv[1] == '5':
-    IP_out = '1111000011111111000000001111111100000000111111111111111100001111'
-    file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case5/RK-TC5.txt", "r")
+# file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case1/RK-TC1.txt", "r")
+# file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case2/RK-TC2.txt", "r")
+# file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case3/RK-TC3.txt", "r")
+# file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case4/RK-TC4.txt", "r")
+file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case5/RK-TC5.txt", "r")
 
 # file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case5/RK-TC5.txt", "r")
 round_keys = file.readlines()
@@ -182,7 +173,7 @@ for l in range(16):
     # print(xor_out_with_left32)
     last_right_join = (join_single_bits(right_32))
     if l == 15:
-        print(  xor_out_with_left32 +' '+ last_right_join  )
+        print(  xor_out_with_left32 + last_right_join  )
     round_output = last_right_join + xor_out_with_left32
     IP_out = round_output
     # if l != 15:   
