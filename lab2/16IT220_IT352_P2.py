@@ -1,7 +1,5 @@
 import copy
-imp = input("Enter key to generate: ")
-imp_list = list(imp)
-to_extract = 8
+
 
 permut_choice_1 = [57, 49, 41, 33, 25, 17, 9,
                    1, 58, 50, 42, 34, 26, 18,
@@ -55,9 +53,9 @@ def convert_to_single_bits(arr):
     return split_list
 
 
-if len(imp_list) >= to_extract:
-    choice = input("1. Left bits \n2. Right bit selection ")
-    if choice == '1':
+
+def round_keys_generate(to_extract,imp_list):
+    if len(imp_list) >= to_extract:
         inp_8_char = imp_list[:to_extract]
         for i in range(len(inp_8_char)):
             inp_8_char[i] = text_to_bits(inp_8_char[i])
@@ -68,7 +66,7 @@ if len(imp_list) >= to_extract:
         # print(bit_56_arr)
         left_half = bit_56_arr[:28]
         right_half = bit_56_arr[28:]
-
+        round_keys_output = []
         for l in range(16):
             if l == 0 or l == 1 or l == 8 or l == 15:
                 left_half = join_single_bits(left_half)
@@ -85,7 +83,8 @@ if len(imp_list) >= to_extract:
                 key1 = []
                 for i in range(48):
                     key1.append(key[permut_choice_2[i]-1])
-                print("Round - ", l+1,join_single_bits(key1))
+                round_keys_output.append(join_single_bits(key1))
+                # print("Round - ", l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
 
@@ -104,62 +103,20 @@ if len(imp_list) >= to_extract:
                 key1 = []
                 for i in range(48):
                     key1.append(key[permut_choice_2[i]-1])
-
-                print("Round - ",l+1,join_single_bits(key1))
+                round_keys_output.append(join_single_bits(key1))
+                # print("Round - ",l+1,join_single_bits(key1))
                 left_half = convert_to_single_bits(left_half1)
                 right_half = convert_to_single_bits(right_half1)
+
     else:
-        inp_8_char = imp_list[-to_extract:]
-        for i in range(len(inp_8_char)):
-            inp_8_char[i] = text_to_bits(inp_8_char[i])
-        bit_64_arr = convert_to_single_bits(inp_8_char)
-        bit_56_arr = []
-        for i in range(56):
-            bit_56_arr.append(bit_64_arr[permut_choice_1[i]-1])
+        print("Enter key of bigger length")
+        exit
+    
+    return round_keys_output
 
-        left_half = bit_56_arr[:28]
-        right_half = bit_56_arr[28:]
 
-        for l in range(16):
-
-            if l == 0 or l == 1 or l == 8 or l == 15:
-                left_half = join_single_bits(left_half)
-                left_half1 = one_bit_shift(left_half)
-
-                right_half = join_single_bits(right_half)
-                right_half1 = one_bit_shift(right_half)
-
-                left_half1 = convert_to_single_bits(left_half1)
-                right_half1 = convert_to_single_bits(right_half1)
-
-                key = left_half1 + right_half1
-                key1 = []
-                for i in range(48):
-                    key1.append(key[permut_choice_2[i]-1])
-                print("Round - ",l+1,join_single_bits(key1))
-                left_half = convert_to_single_bits(left_half1)
-                right_half = convert_to_single_bits(right_half1)
-
-            else:
-                left_half = join_single_bits(left_half)
-                left_half1 = two_bit_shift(left_half)
-
-                right_half = join_single_bits(right_half)
-                right_half1 = two_bit_shift(right_half)
-
-                left_half1 = convert_to_single_bits(left_half1)
-                right_half1 = convert_to_single_bits(right_half1)
-
-                key = left_half1 + right_half1
-
-                key1 = []
-                for i in range(48):
-                    key1.append(key[permut_choice_2[i]-1])
-
-                print("Round - ",l+1,join_single_bits(key1))
-                left_half = convert_to_single_bits(left_half1)
-                right_half = convert_to_single_bits(right_half1)
-
-else:
-    print("Enter key of bigger length")
-    exit
+imp = input("Enter key to generate: ")
+imp_list = list(imp)
+to_extract = 8
+output = round_keys_generate(to_extract,imp_list)
+print(*output)

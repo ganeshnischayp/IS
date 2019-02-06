@@ -2,16 +2,14 @@
 # IP_out = '0000000000000000111111111111111111111111111111110000000000000000'
 # IP_out = '1111111111111111111111111111111100000000000000001111111111111111'
 # IP_out = '0000000011111111000000001111111100000000111111111111111100000000'
-IP_out = '1111000011111111000000001111111100000000111111111111111100001111'
 
 # file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case1/RK-TC1.txt", "r")
 # file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case2/RK-TC2.txt", "r")
 # file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case3/RK-TC3.txt", "r")
 # file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case4/RK-TC4.txt", "r")
-file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case5/RK-TC5.txt", "r")
 
 # file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case5/RK-TC5.txt", "r")
-round_keys = file.readlines()
+# round_keys = file.readlines()
 
 
 def binaryToDecimal(binary):
@@ -56,7 +54,7 @@ def convert_to_6_bit(var):
     bit_6_join = []
     for i in range(48):
         if i % 6 == 0:
-            bit_6_join.append(xor_out[i:i+6])
+            bit_6_join.append(var[i:i+6])
     return bit_6_join
 
 
@@ -136,45 +134,54 @@ def S_box_out(arr):
     return s_box_out_32
 
 
-for l in range(16):
-    IP_out_single_bit = convert_to_single_bits(IP_out)
 
-    left_32 = IP_out_single_bit[:32]
-    right_32 = IP_out_single_bit[32:]
 
-    out_exp_permut = []
+def output_only_des(IP_out,round_keys):
+    for l in range(16):
+        IP_out_single_bit = convert_to_single_bits(IP_out)
 
-    for i in range(48):
-        out_exp_permut.append(right_32[expansion_permurt[i]-1])
+        left_32 = IP_out_single_bit[:32]
+        right_32 = IP_out_single_bit[32:]
 
-    xor_out = (binaryToDecimal(int(join_single_bits(out_exp_permut)))
-               ^ binaryToDecimal(int(round_keys[l])))
-    xor_out = decimalToBinary(xor_out)
+        out_exp_permut = []
 
-    bit_6_join = convert_to_6_bit(xor_out)
-    bit_4_join = S_box_out(bit_6_join)
-    bit_4_join_single = ''
-    for i in range(8):
-        bit_4_join_single += bit_4_join[i]
-    bit_4_join_split = convert_to_single_bits(bit_4_join_single)
+        for i in range(48):
+            out_exp_permut.append(right_32[expansion_permurt[i]-1])
 
-    permut_after_sbox = []
-    for i in range(32):
-        permut_after_sbox.append(bit_4_join_split[perm_after_s_box[i]-1])
+        xor_out = (binaryToDecimal(int(join_single_bits(out_exp_permut)))
+                ^ binaryToDecimal(int(round_keys[l])))
+        xor_out = decimalToBinary(xor_out)
 
-    # print(binaryToDecimal(int(join_single_bits(permut_after_sbox))))
+        bit_6_join = convert_to_6_bit(xor_out)
+        bit_4_join = S_box_out(bit_6_join)
+        bit_4_join_single = ''
+        for i in range(8):
+            bit_4_join_single += bit_4_join[i]
+        bit_4_join_split = convert_to_single_bits(bit_4_join_single)
 
-    # print(binaryToDecimal(int(join_single_bits(left_32))))
+        permut_after_sbox = []
+        for i in range(32):
+            permut_after_sbox.append(bit_4_join_split[perm_after_s_box[i]-1])
 
-    xor_out_with_left32 = binaryToDecimal(int(join_single_bits(
-        permut_after_sbox))) ^ binaryToDecimal(int(join_single_bits(left_32)))
+        # print(binaryToDecimal(int(join_single_bits(permut_after_sbox))))
 
-    xor_out_with_left32 = decimalToBinary_32(xor_out_with_left32)
-    # print(xor_out_with_left32)
-    last_right_join = (join_single_bits(right_32))
-    if l == 15:
-        print(  xor_out_with_left32 + last_right_join  )
-    round_output = last_right_join + xor_out_with_left32
-    IP_out = round_output
+        # print(binaryToDecimal(int(join_single_bits(left_32))))
+
+        xor_out_with_left32 = binaryToDecimal(int(join_single_bits(
+            permut_after_sbox))) ^ binaryToDecimal(int(join_single_bits(left_32)))
+
+        xor_out_with_left32 = decimalToBinary_32(xor_out_with_left32)
+        # print(xor_out_with_left32)
+        last_right_join = (join_single_bits(right_32))
+        if l == 15:
+            return (  xor_out_with_left32 + last_right_join  )
+        round_output = last_right_join + xor_out_with_left32
+        IP_out = round_output
     # if l != 15:   
         # print( last_right_join + xor_out_with_left32 )
+
+IP_out = '1111111100000000000000001111111100000000111111110000000000000000'
+file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case5/RK-TC5.txt", "r")
+round_keys = file.readlines()
+rounds = output_only_des(IP_out,round_keys)
+print(rounds)

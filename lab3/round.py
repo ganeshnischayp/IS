@@ -1,7 +1,7 @@
 import sys
 if sys.argv[1] == '1':
-    IP_out = '1111111111111111111111111111111111111111111111111111111111111111'
-    file = open("/home/gpn/Documents/6th-Sem/IS/lab3/IAS-Lab3-Test-Cases/test-case1/RK-TC1.txt", "r")
+    IP_out = '1111111100000000000000001111111100000000111111110000000000000000'
+    file = open("/home/gpn/Documents/6th-Sem/IS/lab3/round_keys.txt", "r")
 
 if sys.argv[1] == '2':
     IP_out = '0000000000000000111111111111111111111111111111110000000000000000'
