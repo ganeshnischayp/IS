@@ -6,9 +6,7 @@ input_key = input("Enter key for ecb : ")
 keys = P2.round_keys_generate(8,list(input_key))
 
 def decode_binary_string(s):
-    return ''.join(chr(int(s[i*8:i*8+8],2)) for i in range(len(s)//8))
-# print(*keys)
-# input_text = list(input_text)
+    return ''.join(chr(int(s[i*8:i*8+8],2)) for i in range(len(s)//8))  
 
 if len(input_text) >= 8 and len(input_text) <= 40:
     num_blocks = math.ceil(len(input_text)/8)
@@ -22,11 +20,11 @@ if len(input_text) >= 8 and len(input_text) <= 40:
         # print(out_initial_permut)
         output_des_rounds = P3.output_only_des(out_initial_permut,keys)
         # print(output_des_rounds)
-        print("block ",i+1)
-        for k in range(len(output_des_rounds)-1):
+        print("block ",i+1,"Text = ",text_blocks[i])
+        for k in range(len(output_des_rounds)):
             print(output_des_rounds[k])
         out_final_permut = P1.final_permut(output_des_rounds[15])
-        print((out_final_permut))
+        print(("After final permutation : "+out_final_permut))
         print('\n\n\n')
 
 
