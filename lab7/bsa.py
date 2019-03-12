@@ -5,11 +5,6 @@ def modInverse(a, m) :
             return x 
     return 1
 
-def encrypt(pk, plaintext):
-    key, n = pk
-    cipher = ((plaintext) ** key) % n 
-    return cipher
-
 # Driver Program 
 # a = 2
 # m = 33
