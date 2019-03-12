@@ -1,69 +1,34 @@
-def text_to_bits(text, encoding='utf-8', errors='surrogatepass'):
-    bits = bin(int.from_bytes(text.encode(encoding, errors), 'big'))[2:]
-    return bits.zfill(8 * ((len(bits) + 7) // 8))
-
-def binaryToDecimal(binary):
-    binary1 = binary
-    decimal, i, n = 0, 0, 0
-    while(binary != 0):
-        dec = binary % 10
-        decimal = decimal + dec * pow(2, i)
-        binary = binary//10
-        i += 1
-    return decimal
-
-plaintext = input("Enter Cipher text: ")
-# N = int(input("Enter N: "))
-# public_key = int(input("Enter public key: "))
-
-plaintext_ord = [ord(i) for i in plaintext]
-print(plaintext_ord)
-
 def encrypt(pk, plaintext):
     key, n = pk
-    cipher = [((char) ** key) % n for char in plaintext]
+    cipher = ((plaintext) ** key) % n 
     return cipher
 
-def decrypt(pk, ciphertext):
-    key, n = pk
-    plain = [chr((char ** key) % n) for char in ciphertext]
-    return ''.join(plain)
+cipher = int(input("Enter ciphertext: "))
+N = int(input("Enter N: "))
+e = int(input("Enter e:" ))
+append_arr = []
 
-
-text1 = []
-append_arr = [plaintext_ord]
-
-text1 = encrypt((3,143),plaintext_ord)
-append_arr.append(text1)
-
-GPN = append_arr[0]
-
+C1 = encrypt((e,N),cipher)
 while True:
-
-    text2 = encrypt((3,143),GPN)
-
-    append_arr.append(text2)
-
-    if text2 == append_arr[0]:
+    C2 = encrypt((e,N),C1)
+    append_arr.append(C2)
+    if C2 == cipher:
         break
-    GPN = text2
-    
-# print(append_arr)
-for i in append_arr:
-    for j in range(len(i)):
-        print(chr(i[j]),end= '')
-    print('\n')
+    C1 = C2
 
+print("\n".join(map(str,append_arr)))
+# print("\n")
+# print("Intermediate results: ")
 
-# plaintext_real = (append_arr[len(append_arr)-1])
-# print("Plain text is: ")
-# for i in range(len(plaintext_real)):
-#     print(chr(plaintext_real[i]),end= '')
+# file1 = open("16IT220_Intermediate_results_P5_S5.txt","x") 
+# file1.write("\n".join(map(str,append_arr))) 
+# print(*append_arr,sep="\t")
 
+print("\n")
+print("The plain text is: ",append_arr[-2])
 
-# print('\n')
+# print("\n")
 # print("Checking: ")
-# checking = encrypt((3,143),plaintext_real)
-# for i in checking:
-#     print(chr(i),end= '')
-# print('\n')
+# check = encrypt((e,N),append_arr[-2])
+# print("Original Cipher: ",check)
+# print("\n")
