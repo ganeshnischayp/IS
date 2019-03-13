@@ -1,3 +1,4 @@
+import math
 def modInverse(a, m) : 
     a = a % m; 
     for x in range(1, m) : 
@@ -21,10 +22,14 @@ def factors_func(n):
         i=i+1
     return factors
 
-m = (input("Enter M: "))
-e = int(input("Enter e: "))
-n = int(input("Enter N: "))
-r = int(input("Enter r: "))
+# m = (input("Enter M: "))
+# e = int(input("Enter e: "))
+# n = int(input("Enter N: "))
+# r = int(input("Enter r: "))
+m = 'NITK575025'
+e = 7
+n = 143
+r = 2
 
 factors = factors_func(n)
 print("factors of N = ",*factors)
@@ -35,33 +40,26 @@ r_inverse = modInverse(r,n)
 print("r inverse wrt mod(N)",r_inverse)
 
 
-x=8
-while(n>(2**x)):
-    if(n>(2**(x+8))):
-        x=x+8
-    else:
-        break
-block_size = x/8
+
+block_size = (math.floor(math.log(n)/math.log(2))+1) // 8
 
 block_size = int(block_size)
 print(int(block_size))
 num_blocks =len(m) /  (block_size)
 num_blocks = int(num_blocks)
-arr = []
+
+# arr = []
 
 
-for i in range((num_blocks)):
-    arr.append(m[i:i+block_size])
-    
-arr = ['NI','TK','57','50','25']
+arr = [m[i:i+block_size] for i in range(0,len(m),block_size)]
 
-
+# arr = ['NI','TK','57','50','25']
 
 print(arr)
 
-for i in range(len(arr)):
+for k in range(len(arr)):
     hexa_caoncat = ''
-    for j in arr[i]:
+    for j in arr[k]:
         ascii = ord(j)
         hexa_caoncat += (hex(ascii).replace('0x',''))
     # print(hexa_caoncat)
@@ -71,9 +69,29 @@ for i in range(len(arr)):
     sends_to_sign = (in_dec * (r ** e)) % n
     sends_signed = (sends_to_sign ** d) % n
     attacker_recieved = (sends_signed * r_inverse) % n
+
+    attacker_recieved_in_hex = hex(attacker_recieved).replace('0x','')
+    # print(attacker_recieved_in_hex)
+
+    final_hex_arr = [attacker_recieved_in_hex[i:i+block_size] for i in range(0,len(attacker_recieved_in_hex),block_size)]
+    # print(final_hex_arr)
+
+    final_ans = ''
+    for i in range(len(final_hex_arr)):
+        in_int = int(final_hex_arr[i],16)
+        in_chr = chr(in_int)
+        print(final_hex_arr[i],int(final_hex_arr[i],16),chr(int(final_hex_arr[i],16)))
+
+        print(in_int,str(in_chr))
+        final_ans += chr(int(final_hex_arr[i],16))
+
+    # print("Block ",arr[k]," Signature : ",attacker_recieved, "Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr, "Human noobs = ",final_ans)
+    
+
+
     # print("Blind signature attack: ",attacker_recieved)
-    attacker_recieved_in_readiable = chr(attacker_recieved)
-    print("Block ",arr[i]," Signature : ",attacker_recieved_in_readiable)
+    # attacker_recieved_in_readiable = chr(attacker_recieved)
+    # print("Block ",arr[i]," Signature : ",attacker_recieved_in_readiable)
 
 
 
