@@ -81,7 +81,7 @@ for l in range(len(arr)):
         val = ord(ll)
         hexa_caoncat += (hex(val).replace('0x',''))
     in_dec = int(hexa_caoncat,16)
-    cipher_arr.append(in_dec)
+    cipher_arr.append(in_dec) 
     # print(cipher_arr)
 
 scam = []
