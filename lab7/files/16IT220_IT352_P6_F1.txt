@@ -1,0 +1,11 @@
+enter p: 349
+enter q: 353
+Enter M: NITK
+Enter e: 13
+Private key  84805
+Enter r: 13
+94767
+2
+['NI', 'TK']
+Block  NI  Signature :  119094 Hexadecimal =  01d136  Split Hexa =  ['01', 'd1', '36'] Human  =  Ñ6
+Block  TK  Signature :  40987 Hexadecimal =  a01b  Split Hexa =  ['a0', '1b'] Human  =  

@@ -1,0 +1,11 @@
+enter p: 349
+enter q: 353
+Enter M: NITK
+Enter e: 7
+Private key  34999
+Enter r: 3
+41066
+2
+['NI', 'TK']
+Block  NI  Signature :  42243 Hexadecimal =  a503  Split Hexa =  ['a5', '03'] Human  =  ¥
+Block  TK  Signature :  16866 Hexadecimal =  41e2  Split Hexa =  ['41', 'e2'] Human  =  Aâ

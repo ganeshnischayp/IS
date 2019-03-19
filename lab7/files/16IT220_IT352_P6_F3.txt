@@ -1,0 +1,12 @@
+enter p: 173
+enter q: 179
+Enter M: 525
+Enter e: 7
+Private key  17495
+Enter r: 7
+4424
+1
+['5', '2', '5']
+Block  5  Signature :  58 Hexadecimal =  3a  Split Hexa =  ['3a'] Human  =  :
+Block  2  Signature :  26382 Hexadecimal =  670e  Split Hexa =  ['67', '0e'] Human  =  g
+Block  5  Signature :  58 Hexadecimal =  3a  Split Hexa =  ['3a'] Human  =  :
