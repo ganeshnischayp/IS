@@ -1,0 +1,15 @@
+enter p: 173
+enter q: 179
+Enter M: M.
+Enter e: 7
+Private key  17495
+Enter r: 7
+r_inverse  4424
+1
+['M', '.']
+[77]
+[77, 46]
+Block  M  AttackerReceived :  6762 Hexadecimal =  1a6a  Split Hexa =  ['1a', '6a']  cipher string:  �j cipher =  M
+Block  .  AttackerReceived :  30802 Hexadecimal =  7852  Split Hexa =  ['78', '52']  cipher string:  xR cipher =  .
+Final Plain text:  �jxR
+cipher msg obtained:  M.

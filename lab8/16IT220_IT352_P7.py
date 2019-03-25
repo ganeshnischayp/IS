@@ -25,12 +25,15 @@ p = int(input("enter p: "))
 q = int(input("enter q: "))
 m = (input("Enter M: "))
 
+# n = int(input("Enter N: "))
 n = p * q
 e = int(input("Enter e: "))
+
+
 factors = factors_func(n)
 # print("factors of N = ",*factors)
-# phi_of_n = (factors[0]-1)*(factors[1]-1)
-phi_of_n = (p-1)*(q-1)
+phi_of_n = (factors[0]-1)*(factors[1]-1)
+# phi_of_n = (p-1)*(q-1)
 d = modInverse(e,phi_of_n)
 
 if d == -1:
@@ -38,6 +41,7 @@ if d == -1:
     exit()
 
 print("Private key ",d)
+
 r = int(input("Enter r: "))
 count = 0
 flag = 0
@@ -58,7 +62,8 @@ if flag == 0:
 
 
 
-print(r_inverse)
+print("r_inverse ",r_inverse)
+
 block_size = (math.floor(math.log(n)/math.log(2))+1) // 8
 
 block_size = int(block_size)
@@ -68,6 +73,21 @@ num_blocks = int(num_blocks)
 
 arr = [m[i:i+block_size] for i in range(0,len(m),block_size)]
 print(arr)
+
+
+cipher_arr = []
+for l in range(len(arr)):
+    hexa_caoncat = ''
+    for ll in arr[l]:
+        val = ord(ll)
+        hexa_caoncat += (hex(val).replace('0x',''))
+    in_dec = int(hexa_caoncat,16)
+    cipher_arr.append(in_dec)
+    print(cipher_arr)
+
+vapas_string = ''
+cipher_string = ''
+
 
 for k in range(len(arr)):
     hexa_caoncat = ''
@@ -91,7 +111,16 @@ for k in range(len(arr)):
 
     final_hex_arr = [attacker_recieved_in_hex[i:i+2] for i in range(0,len(attacker_recieved_in_hex),2)]
         
+    final_char_arr = []
+    cch = []
+    for kkk in (final_hex_arr):
+        cch.append(chr(int(kkk,16)))
 
+    cch_join = ''
+    for ll in cch:
+        cch_join += ll
+
+        
 
 
 
@@ -109,8 +138,20 @@ for k in range(len(arr)):
     
     checking = (attacker_recieved ** e) % n 
     # print(" Checking ",checking,)
-    # print("Block ",arr[k], " Signature : ",attacker_recieved, "Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr, "Human  = ",final_ans)
-    print("Block ",arr[k],"Signature : ",attacker_recieved)
+    text =  (attacker_recieved ** e) % n
+    txt1 = hex(text)[2:]
+    msg = bytes.fromhex(txt1).decode('utf-8')
+   
+    # print("Block ",arr[k], " Attacker Received : ",attacker_recieved, "Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr, "Human  = ",final_ans)
+    vapas_string += msg
+    cipher_string += cch_join
 
+
+    print("Block ",arr[k]," AttackerReceived : ",attacker_recieved,"Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr," cipher string: ",cch_join, "cipher = ",msg)
+    
+
+    # print(msg)
+print("Final Plain text: ",cipher_string)
+print("cipher msg obtained: ",vapas_string)
 
 

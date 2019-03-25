@@ -1,0 +1,5 @@
+enter p: 349
+enter q: 353
+Enter M: 63F5
+Enter e: 3
+d dosent exist: 

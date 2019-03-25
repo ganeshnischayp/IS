@@ -1,0 +1,13 @@
+enter p: 349
+enter q: 353
+Enter M: {p
+Enter e: 7
+Private key  34999
+Enter r: 61909
+r_inverse  120618
+2
+['{p']
+[31600]
+Block  {p  AttackerReceived :  25444 Hexadecimal =  6364  Split Hexa =  ['63', '64']  cipher string:  cd cipher =  {p
+Final Plain text:  cd
+cipher msg obtained:  {p

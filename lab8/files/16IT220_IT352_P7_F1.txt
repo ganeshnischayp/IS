@@ -1,0 +1,13 @@
+enter p: 349
+enter q: 353
+Enter M: >b
+Enter e: 7
+Private key  34999
+Enter r: 3
+r_inverse  41066
+2
+['>b']
+[15970]
+Block  >b  AttackerReceived :  77537 Hexadecimal =  012ee1  Split Hexa =  ['01', '2e', 'e1']  cipher string:  .á cipher =  >b
+Final Plain text:  .á
+cipher msg obtained:  >b

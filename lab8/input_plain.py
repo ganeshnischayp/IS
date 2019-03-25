@@ -21,14 +21,14 @@ def factors_func(n):
                 factors.append(i)
         i=i+1
     return factors
-# p = int(input("enter p: "))
-# q = int(input("enter q: "))
+p = int(input("enter p: "))
+q = int(input("enter q: "))
 m = (input("Enter M: "))
 
-n = int(input("Enter N: "))
+# n = int(input("Enter N: "))
 e = int(input("Enter e: "))
 
-
+n =  p * q
 factors = factors_func(n)
 # print("factors of N = ",*factors)
 phi_of_n = (factors[0]-1)*(factors[1]-1)
@@ -66,7 +66,7 @@ print("r_inverse ",r_inverse)
 block_size = (math.floor(math.log(n)/math.log(2))+1) // 8
 
 block_size = int(block_size)
-print(int(block_size))
+# print(int(block_size))
 num_blocks =len(m) /  (block_size)
 num_blocks = int(num_blocks)
 
@@ -81,21 +81,27 @@ for l in range(len(arr)):
         val = ord(ll)
         hexa_caoncat += (hex(val).replace('0x',''))
     in_dec = int(hexa_caoncat,16)
-    cipher_arr.append(in_dec)
-    print(cipher_arr)
+    cipher_arr.append(in_dec) 
+    # print(cipher_arr)
+
+scam = []
+for z in cipher_arr:
+    scam.append((z ** e ) % n )
+print(scam)
 
 
 
 
 
-
-for k in range(len(arr)):
+vapas_string = ''
+for k in range(len(scam)):
     hexa_caoncat = ''
-    for j in arr[k]:
-        ascii = ord(j)
-        hexa_caoncat += (hex(ascii).replace('0x',''))
+    # for j in arr[k]:
+    #     ascii = j
+    #     hexa_caoncat += (hex(ascii).replace('0x',''))
     # print(hexa_caoncat)
-    in_dec = int(hexa_caoncat,16)
+    # in_dec = int(hexa_caoncat,16)
+    in_dec = scam[k]
     # print(in_dec)//////////////////////////////
 
     sends_to_sign = (in_dec * (r ** e)) % n
@@ -129,8 +135,9 @@ for k in range(len(arr)):
     
     checking = (attacker_recieved ** e) % n 
     # print(" Checking ",checking,)
-    # print("Block ",arr[k], " Attacker Received : ",attacker_recieved, "Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr, "Human  = ",final_ans)
-    print("Block ",arr[k]," Attacker Received :  ",attacker_recieved,"Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr)
-
+    print("Block ",arr[k], " Cipher=",chr(scam[k])," Attacker Received:",attacker_recieved, "Hexadecimal:",attacker_recieved_in_hex," Split_Hexa=",final_hex_arr, "Human=",final_ans)
+    # print("Block ",arr[k]," Attacker Received :  ",attacker_recieved,"Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr)
+    vapas_string += final_ans
+print("Plain text Obtained After Chosen cipher text attack = ",vapas_string)
 
 
