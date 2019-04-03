@@ -1,0 +1,499 @@
+Checking www.nitk.ac.in is alive....
+Host is Working
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 0
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = tcpmux
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 2
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 3
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 4
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 5
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 6
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = echo
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 8
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = discard
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 10
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = systat
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 12
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = daytime
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 14
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = netstat
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 16
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = qotd
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = msp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = chargen
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ftp_data
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ftp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ssh
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = ssh
+  dport     = 53568
+  seq       = 1096541384
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 29200
+  chksum    = 0xe54e
+  urgptr    = 0
+  options   = [('MSS', 1460)]
+###[ Padding ]### 
+     load      = '\x00\x00'
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ssh
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 22 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = telnet
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 24
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = smtp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------

@@ -1,0 +1,1139 @@
+Checking www.nitk.ac.in is alive....
+Host is Working
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 0
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = tcpmux
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 2
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 3
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 4
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 5
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 6
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = echo
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 8
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = discard
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 10
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = systat
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 12
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = daytime
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 14
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = netstat
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 16
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = qotd
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packets recieved from  www.nitk.ac.in
+---------------
+Filtered / dropped
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = msp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = 8
+  dport     = 45322
+  seq       = 1629662611
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0xda61
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 8
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 8 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = discard
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = discard
+  dport     = 34462
+  seq       = 2833643186
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x73ea
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = discard
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 9 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 10
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = 10
+  dport     = 33547
+  seq       = 3063282526
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x6520
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 10
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 10 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = systat
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = systat
+  dport     = 43455
+  seq       = 821612678
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0xeee0
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = systat
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 11 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 12
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = 12
+  dport     = 47557
+  seq       = 2458535765
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x679
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 12
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 12 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = daytime
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = daytime
+  dport     = 44783
+  seq       = 2526442745
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0xdf9d
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = daytime
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 13 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 14
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = 14
+  dport     = 41770
+  seq       = 3881994359
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x8717
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 14
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 14 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = netstat
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = netstat
+  dport     = 57880
+  seq       = 2681271696
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x22a1
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = netstat
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 15 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 16
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = 16
+  dport     = 11367
+  seq       = 494711653
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x9cd1
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 16
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 16 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = qotd
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = qotd
+  dport     = 39148
+  seq       = 2910764954
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x9413
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = qotd
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 17 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = msp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = msp
+  dport     = 7791
+  seq       = 3631174845
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x4e7c
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = msp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 18 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = chargen
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = chargen
+  dport     = 60569
+  seq       = 1262963570
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x16c4
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = chargen
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 19 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ftp_data
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = ftp_data
+  dport     = 3521
+  seq       = 119806499
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x6b0e
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ftp_data
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 20 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ftp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = ftp
+  dport     = 51799
+  seq       = 2777989875
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x6735
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ftp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 21 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ssh
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = ssh
+  dport     = 55088
+  seq       = 1345802326
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x2256
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = ssh
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 22 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = telnet
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = telnet
+  dport     = 11039
+  seq       = 1116891285
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0xc3cc
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = telnet
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 23 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 24
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = 24
+  dport     = 21655
+  seq       = 532311810
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0xb6be
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 24
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 24 is open
+---------------
+Sending SYN to  www.nitk.ac.in with contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = smtp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet recieved from  www.nitk.ac.in  with contents:
+###[ TCP ]### 
+  sport     = smtp
+  dport     = 32679
+  seq       = 895426876
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0xc3ce
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Reseting Connection with  www.nitk.ac.in with contents:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = smtp
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 25 is open
+---------------

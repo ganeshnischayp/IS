@@ -5,14 +5,14 @@ import socket
 s = socket.socket()		 
 
 # Define the port on which you want to connect 
-port = 12346				
+port = 5252		
 
 # connect to the server on local computer 
-s.connect(('10.53.90.164', port)) 
+s.connect(('192.168.43.75', port)) 
 #10.53.124.251
 # receive data from the server 
 
-s.send('Thank you for connecting'.encode()) 
+s.send('503023'.encode()) 
 # close the connection 
 s.close()
 

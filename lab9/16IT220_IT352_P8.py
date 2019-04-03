@@ -1,14 +1,34 @@
 import pcapkit
 
+def power(x, y, p) : 
+    res = 1     # Initialize result 
+  
+    # Update x if it is more 
+    # than or equal to p 
+    x = x % p  
+  
+    while (y > 0) : 
+          
+        # If y is odd, multiply 
+        # x with result 
+        if ((y & 1) == 1) : 
+            res = (res * x) % p 
+  
+        # y must be even now 
+        y = y >> 1      # y = y/2 
+        x = (x * x) % p 
+          
+    return res 
+
 def encrypt(pk, plaintext):
     key, n = pk
-    cipher = ((plaintext) ** key) % n 
+    cipher = power(plaintext,key, n)
     return cipher
 
-extraction=pcapkit.extract(fin='125.pcap',nofile=True,engine='dpkt')
+extraction = pcapkit.extract(fin='55.pcap',nofile=True,engine='dpkt')
 # print(extraction.frame)
 
-st = extraction.frame[3]['Raw'].info.packet.__str__()[2:-1]
+st = extraction.frame[4]['Raw'].info.packet.__str__()[2:-1]
 print(st)
 
 cipher = int(st)
@@ -24,7 +44,7 @@ while True:
         break
     C1 = C2
 
-print("\n".join(map(str,append_arr)))
+# print("\n".join(map(str,append_arr)))
 # print("\n")
 # print("Intermediate results: ")
 

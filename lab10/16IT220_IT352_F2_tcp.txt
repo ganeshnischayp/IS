@@ -1,0 +1,63 @@
+Checking www.nitk.ac.in is alive....
+Host is Working
+ Sending SYN message to  www.nitk.ac.in
+TCP header contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 9000
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Packet Recieved!!
+Content of packet recieved from   www.nitk.ac.in
+###[ TCP ]### 
+  sport     = 9000
+  dport     = 48880
+  seq       = 1906379470
+  ack       = 1
+  dataofs   = 6
+  reserved  = 0
+  flags     = SA
+  window    = 32120
+  chksum    = 0x2618
+  urgptr    = 0
+  options   = [('MSS', 1370)]
+
+Sending ACK  packet to  www.nitk.ac.in with content:
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 9000
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = A
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+Reseting the connection to  www.nitk.ac.in with content
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 9000
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = R
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+---------------
+Port 9000 is Open
+---------------

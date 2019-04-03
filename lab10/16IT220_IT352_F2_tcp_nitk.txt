@@ -1,0 +1,21 @@
+Checking www.nitk.ac.in is alive....
+Host is Working
+ Sending SYN message to  www.nitk.ac.in
+TCP header contents
+###[ TCP ]### 
+  sport     = <RandShort>
+  dport     = 9000
+  seq       = 0
+  ack       = 0
+  dataofs   = None
+  reserved  = 0
+  flags     = S
+  window    = 8192
+  chksum    = None
+  urgptr    = 0
+  options   = []
+
+No packet recieved from  www.nitk.ac.in
+---------------
+SYN packet was filtered/dropped
+---------------
