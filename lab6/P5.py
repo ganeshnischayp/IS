@@ -152,7 +152,8 @@ def chosen_cipher_text(p,q,m,e,r):
 
 
         # print("Block ",arr[k]," AttackerReceived : ",attacker_recieved,"Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr," cipher string: ",cch_join, "cipher = ",msg)
-        return_string += ("Block "+ str(arr[k]) + " Signature : " + str(attacker_recieved))
+        # print("Block ",arr[k]," AttackerReceived : ",attacker_recieved,"Hexadecimal = ",attacker_recieved_in_hex," Split Hexa = ",final_hex_arr," cipher string: ",cch_join, "cipher = ",msg)
+        return_string += ("Block "+ str(arr[k]) + " Signature : " + str(attacker_recieved) + "cipher = " + str(cch_join))
         return_string += '\n'
 
 
